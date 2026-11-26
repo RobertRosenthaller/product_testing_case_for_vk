@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186 186">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F6F6F6"/><stop offset="1" stop-color="#EFEFEF"/>
+    </linearGradient>
+    <linearGradient id="cover" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B7A9F2"/><stop offset=".55" stop-color="#9483DB"/><stop offset="1" stop-color="#7563C4"/>
+    </linearGradient>
+    <linearGradient id="spine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6A58B8"/><stop offset="1" stop-color="#8A79D6"/>
+    </linearGradient>
+    <linearGradient id="pages" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E9E1CF"/><stop offset="1" stop-color="#F8F3E8"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F3E8CF"/><stop offset=".5" stop-color="#DCCBA5"/><stop offset="1" stop-color="#BFA97E"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FBF6EC"/><stop offset=".6" stop-color="#E3D6BB"/><stop offset="1" stop-color="#C9B892"/>
+    </linearGradient>
+    <linearGradient id="tail" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#B9ACF4"/><stop offset="1" stop-color="#7F6CCF"/>
+    </linearGradient>
+    <radialGradient id="shine" cx=".3" cy=".25" r=".6">
+      <stop offset="0" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
+    <filter id="soft2" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.5"/></filter>
+  </defs>
+  <rect width="186" height="186" rx="40" fill="url(#bg)"/>
+  <!-- shadow -->
+  <ellipse cx="86" cy="176" rx="62" ry="10" fill="#7c6a4a" opacity=".22" filter="url(#soft)"/>
+  <g transform="translate(90 112) scale(1.32) translate(-90 -100) rotate(-11 90 100)">
+    <!-- pages edge -->
+    <rect x="50" y="42" width="84" height="112" rx="10" fill="url(#pages)"/>
+    <rect x="46" y="38" width="84" height="112" rx="10" fill="url(#cover)"/>
+    <rect x="46" y="38" width="14" height="112" rx="7" fill="url(#spine)" opacity=".85"/>
+    <rect x="46" y="38" width="84" height="112" rx="10" fill="url(#shine)"/>
+    <!-- emblem -->
+    <circle cx="95" cy="86" r="21" fill="url(#gold)"/>
+    <circle cx="95" cy="86" r="21" fill="none" stroke="#B19B6E" stroke-width="1.2" opacity=".6"/>
+    <ellipse cx="95" cy="86" rx="9" ry="21" fill="none" stroke="#A88F60" stroke-width="2" opacity=".75"/>
+    <path d="M74 86h42M77 75h36M77 97h36" stroke="#A88F60" stroke-width="2" opacity=".75"/>
+    <!-- title lines -->
+    <rect x="72" y="118" width="46" height="6" rx="3" fill="url(#gold)"/>
+    <rect x="78" y="129" width="34" height="4" rx="2" fill="url(#gold)" opacity=".8"/>
+  </g>
+  <!-- trail -->
+  <path d="M22 62 C 48 30, 92 18, 128 28" fill="none" stroke="#A497E6" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 9" opacity=".9"/>
+  <!-- plane -->
+  <g transform="translate(146 34) scale(1.15) rotate(-18)">
+    <ellipse cx="2" cy="14" rx="20" ry="4" fill="#6b5a3b" opacity=".18" filter="url(#soft2)"/>
+    <path d="M-30 0 C -30 -6, -22 -8, -14 -8 L 22 -8 C 30 -8, 36 -4, 38 0 C 36 4, 30 7, 22 7 L -14 7 C -22 7, -30 6, -30 0 Z" fill="url(#body)"/>
+    <path d="M-2 -4 L 10 -30 L 18 -30 L 12 -4 Z" fill="url(#body)"/>
+    <path d="M-2 4 L 10 28 L 18 28 L 12 4 Z" fill="#CDBD98"/>
+    <path d="M-30 0 L -36 -18 L -28 -18 L -20 -6 Z" fill="url(#tail)"/>
+    <ellipse cx="7" cy="12" rx="6" ry="4" fill="url(#tail)"/>
+    <path d="M24 -5 l6 0" stroke="#8F7FDA" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="-8" cy="-2" r="1.6" fill="#8F7FDA"/><circle cx="-1" cy="-2" r="1.6" fill="#8F7FDA"/><circle cx="6" cy="-2" r="1.6" fill="#8F7FDA"/><circle cx="13" cy="-2" r="1.6" fill="#8F7FDA"/>
+  </g>
+</svg>
